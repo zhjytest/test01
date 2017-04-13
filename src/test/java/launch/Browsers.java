@@ -20,7 +20,7 @@ public class Browsers {
 	
 	
 	public Browsers(BrowsersType browserstype,int i) throws MalformedURLException{
-		remote_url = new ParseProperties("remote_url") ;
+		remote_url = new ParseProperties(projectpath+"/tools/test.properties") ;
 		url = remote_url.getValue("remote_url") ;
 		System.out.println(projectpath) ;
 		switch(browserstype){
