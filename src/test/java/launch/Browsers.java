@@ -5,6 +5,7 @@ import java.net.URL;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.*;
 import org.openqa.selenium.ie.*;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -43,7 +44,9 @@ public class Browsers {
 					driver = new RemoteWebDriver(new URL(url),capabilities) ;
 				}
 				else{
-					driver = new ChromeDriver() ;
+					ChromeOptions options = new ChromeOptions();
+					options.setBinary("C:\\Users\\zhjy\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
+					driver = new ChromeDriver(options) ;
 				}
 				break ;
 		}
