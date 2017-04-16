@@ -22,7 +22,7 @@ public class TestBrowsers {
 	public void setUp() throws MalformedURLException{
 		//DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 		//WebDriver driver = new RemoteWebDriver(new URL("http://192.168.1.103:5555/wd/hub"),capabilities) ;
-		Browsers browser = new Browsers(BrowsersType.firefox,1);
+		Browsers browser = new Browsers(BrowsersType.chrome,1);
 		driver = browser.driver ;
 		System.out.println("before driver:"+driver);
 		username = "19520001000" ;
